@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trackeerbackground"
+    android:orientation="vertical"
+    tools:context="ethered.mcc_project.Firstpage">
+    <TextView
+        android:id="@+id/assigntrack"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Assignment"
+        android:background="#db2929"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/attendtrack"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Attendance"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#db2929"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

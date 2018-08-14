@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:scrollbars="vertical"
+android:weightSum="1"
+    android:layout_height="match_parent"
+    tools:context="ethered.mcc_project.MainActivity2">
+
+
+    <LinearLayout android:id="@+id/ilay1"
+        android:background="@drawable/boundary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+      >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="MCC"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minrequired"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum Requirement: 75%" />
+
+            <TextView
+
+                android:id="@+id/lec2attend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Minimum lectures to attend: 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circlelay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Attendance" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/circletext"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circulartext"
+                android:gravity="center"
+                android:text="70%"
+                android:textColor="#ffffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Attended"/>
+                    <TextView
+                        android:id="@+id/curratt"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7"/>
+
+                    <ImageButton
+
+                        android:id="@+id/addlec"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="1dp"
+                    android:layout_height="65dp"
+                    android:background="@android:color/darker_gray"></View>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bunked"/>
+                    <TextView
+                        android:id="@+id/currbunk"
+                        android:gravity="center"
+                        android:layout_marginRight="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"/>
+
+                    <ImageButton
+                        android:id="@+id/addbunk"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="15dp"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_weight="0.97"
+        android:id="@+id/list_data"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+<LinearLayout
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+
+        android:id="@+id/addsubject"
+        android:layout_weight="0.5"
+        android:textColor="#ffffffff"
+        android:background="@drawable/btn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="ADD SUBJECT"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/delsubject"
+        android:layout_weight="0.5"
+        android:textColor="#ffffffff"
+        android:background="@drawable/btn"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="45dp"
+        android:text="DELETE SUBJECT"
+        android:textSize="20dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"/>
+
+</LinearLayout>
+</LinearLayout>
